@@ -1,0 +1,10 @@
+apiVersion: v1                             # Defines the API version being used (in this case, "v1" for Kubernetes API version 1).
+kind: Pod                                  # Specifies the type of Kubernetes resource being created, in this case, a Pod.
+metadata:
+  name: demoPod                           # Specifies the name of the Pod as "demo-pod".
+  labels:
+    name: demoPod                         # Specifies labels for the Pod; in this case, a label with the key "name" and value "demo-pod".
+spec:
+  containers:
+    - name: demoContainer                 # Defines the first container within the Pod.
+      image: nginx                         # Specifies the Docker image to be used for the container, in this case, "nginx".
